@@ -1,0 +1,70 @@
+.share-document-container {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url('https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg'); 
+  background-size: cover;
+  height: 100vh;
+}
+
+/* General form styling */  
+.share-document-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.share-document-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 450px;
+  background: rgba(255, 255, 255, 0.5); /* Light transparent background for the form */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.share-document-container input,select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.share-document-container .share {
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-document-container .share:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .share-document-container {
+      padding: 1.5rem;
+  }
+
+  .share-document-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .share-document-container input,
+  .share-document-container .share {
+      font-size: 0.9rem;
+  }
+
+  .share-document-container form {
+      width: 100%; /* Form takes full width on smaller screens */
+      padding: 1.5rem;
+  }
+}

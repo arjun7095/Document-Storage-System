@@ -1,0 +1,84 @@
+/* UploadDocument.css */
+
+/* Container for centering form on the page */
+.upload-document-container {
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url('https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg'); 
+  background-size: cover;
+  height: 100vh;
+
+  }
+  
+  /* General form styling */
+  .upload-document-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .upload-document-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.5); /* Light transparent background for the form */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+    /* Center the form */
+    margin: auto; /* Automatically center horizontally and vertically */
+    position: relative;
+    top: 40%; /* Push down 50% from the top */
+    transform: translateY(-50%); /* Adjust for the element's height */
+  }
+  
+  .upload-document-container input[type="text"],
+  .upload-document-container input[type="file"],
+  .upload-document-container .upload {
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Button styling */
+  .upload-document-container .upload {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-document-container .upload:hover {
+    background-color: #45a049;
+  }
+  
+  /* Error message styling */
+  .upload-document-container p {
+    font-size: 0.9rem;
+    color: #d9534f;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .upload-document-container {
+      padding: 1.5rem;
+    }
+  
+    .upload-document-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .upload-document-container input[type="text"],
+    .upload-document-container .upload {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+  }
+  

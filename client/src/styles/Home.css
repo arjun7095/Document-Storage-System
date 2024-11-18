@@ -1,0 +1,143 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home container styling */
+.home-container {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background-image: url("https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+   
+}
+
+.home-content {
+    display: flex; /* Enables Flexbox for the content */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Horizontally centers content */
+    justify-content: center; /* Vertically centers content */
+    position: absolute; /* Allows precise positioning */
+    top: 50%; /* Moves the content 50% down from the top */
+    left: 50%; /* Moves the content 50% right from the left */
+    transform: translate(-50%, -50%); /* Offsets the position to truly center */
+    max-width: 800px;
+    text-align: center; /* Centers text inside the content */
+    border-radius: 10px; /* Optional: Rounds the edges */
+    color: white;
+    margin-top: 50px;
+
+}
+
+
+.home-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+/* Features section */
+.features {
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.features ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.features ul li {
+    margin-bottom: 10px;
+}
+
+/* Call to action buttons */
+.cta {
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #28a745;
+}
+
+.btn-secondary:hover {
+    background: #1e7e34;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .features h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    .features ul {
+        margin-left: 10px;
+    }
+}

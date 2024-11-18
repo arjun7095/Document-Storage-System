@@ -1,0 +1,192 @@
+/* MyDocuments.css */
+
+.documents-container {
+  background-image: url('https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Ensures it initially fills the entire viewport height */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.documents-container h2 {
+  font-size: 1.8rem;
+  color: rgb(7, 33, 73);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-list {
+  display: flex; /* Use flexbox for side-by-side alignment */
+  flex-wrap: wrap; /* Ensure cards wrap to the next line if necessary */
+  gap: 20px; /* Add a 20px gap between the cards */
+  justify-content: flex-start;
+}
+
+.document-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgb(249, 247, 247,0.8);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 250px; /* Limit height */
+  overflow: hidden; /* Hide overflow content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.document-card h3 {
+  font-size: 1.2rem;
+  color: rgb(35, 46, 243);
+  margin-bottom: 0.5rem;
+}
+
+.document-card p {
+  font-size: 15px;
+  font-weight: 1000;
+  color: #000000;
+}
+
+.document-preview {
+  font-size: 0.8rem;
+  color: black;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.document-link {
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.document-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .documents-container {
+    padding: 1rem;
+  }
+
+  .documents-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .document-item h3 {
+    font-size: 1rem;
+  }
+
+  .card-list {
+    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+  }
+
+  .document-card {
+    max-height: 300px; /* Increase height on small screens */
+  }
+}
+
+
+.document-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.share-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.share-btn:hover, .delete-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Three-Dot Icon */
+.more-options {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  margin-left: auto;
+  position: absolute; /* Ensure it's positioned relative to document-card */
+  top: 10px; /* Adjust as per need to place it in the correct position */
+  right: 10px; /* Adjust as per need */
+  z-index: 100; /* Ensure the button itself is above other elements */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 2000; /* Ensure it's above other content */
+  width: 150px;
+  top: 40px; /* Position dropdown directly below the three-dot icon */
+  right: 0; /* Align dropdown with the right edge of the button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for better visibility */
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 12px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+/* Ensure that the document card has relative positioning */
+.document-card {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.owned-documents,.shared-documents h3{
+  color: white;
+  font-size: 20px;
+}
+.shared-documents p{
+  font-size: 15px;
+  font-weight: 1000;
+}

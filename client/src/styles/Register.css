@@ -1,0 +1,106 @@
+/* Client/src/components/Auth/Register.css */
+
+.register-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .register-form-container h2 {
+    font-size: 2rem;
+    color: rgb(36, 36, 246);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register-form {
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .register-form input:focus {
+    outline: none;
+    border-color: #50c9c3;
+    box-shadow: 0 0 5px rgba(80, 201, 195, 0.5);
+  }
+  
+  .register-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #50c9c3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form button:hover {
+    background-color: #3baaa1;
+  }
+  
+  @media (max-width: 768px) {
+    .register-form {
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  
+    .register-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .register-form button {
+      font-size: 1rem;
+    }
+  }
+  /* Home button styling */
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #3baaa1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #105f58;
+  }
+  
+  @media (max-width: 768px) {
+    .home-button {
+      top: 10px;
+      left: 10px;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  

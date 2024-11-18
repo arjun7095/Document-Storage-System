@@ -1,0 +1,84 @@
+/* Client/src/components/Auth/Login.css */
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+  }
+  
+  .login-form-container h2 {
+    font-size: 2rem;
+    color: rgb(36, 36, 246);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.8); /* Light transparent background for better readability */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the form */
+}
+
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #357abd;
+  }
+  
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  
+    .login-form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .login-form button {
+      font-size: 1rem;
+    }
+  }

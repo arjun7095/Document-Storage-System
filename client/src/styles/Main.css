@@ -1,0 +1,35 @@
+/* Container styling for Main page */
+.main-container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://crc-india.com/wp-content/uploads/2023/04/document-management-system.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(7, 33, 73);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Styling for the login link */
+  .login-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(105, 255, 78, 0.7); /* Semi-transparent background */
+    color: #333; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .login-link:hover {
+    background-color: rgb(47, 141, 28); /* Full opaque background on hover */
+    color: white;
+  }
+  
